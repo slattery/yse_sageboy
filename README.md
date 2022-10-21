@@ -24,13 +24,9 @@ This measure allows for anon users to see error messages and take action, differ
 
 Can be used alongside 'forced login' where certain URLs may be forced.
 
-## yse_sageboy_preprocess_block__nonauthorizedmessageblock
+## yse_sageboy_form_user_login_form_alter
 
-GONE FOR NOW FROM THIS MODULE. PART OF THEME
-
-When we get an anonymous user who is not authorized to see content, we show a block with a status and instructions to log in.
-
-If the content wanted was a user profile, and the profile has a public version, this function populates variables to allow twig to render a message with that public URL.
+We add a wrapper to the user-login-form where in future we can put a settings driven message.
 
 ## notes
 
