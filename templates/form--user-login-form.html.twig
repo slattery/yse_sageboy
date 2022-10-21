@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *  page--user--login.html.twig might be better
+ * @ingroup themeable
+ */
+#}
+{{ {'#cache': {'max-age': 0}} }}
+
+{{dd(attributes)}}
+{{dd(children)}}
+
+<form{{ attributes }}>
+  {{ children }}
+</form>

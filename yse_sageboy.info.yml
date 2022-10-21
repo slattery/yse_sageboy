@@ -1,0 +1,9 @@
+name: YSE Sageboy
+type: module
+description: Hooks and Blocks to help with CAS and Admin accounts.
+package: YSE Contrib
+core_version_requirement: ^8.7.7 || ^9
+dependencies:
+  - drupal:help
+  - cas:cas
+

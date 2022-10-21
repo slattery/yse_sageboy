@@ -1,0 +1,6 @@
+{
+  "name": "slattery/yse_sageboy",
+  "description": "user login CAS replacements",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later"
+}

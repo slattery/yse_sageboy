@@ -1,0 +1,10 @@
+yse_sageboy.sageboy_login:
+  path: '/sageboy/accessform'
+  defaults:
+    _form: '\Drupal\user\Form\UserLoginForm'
+    _title: 'Sageboy'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _admin_route: FALSE
+    _maintenance_access: TRUE
