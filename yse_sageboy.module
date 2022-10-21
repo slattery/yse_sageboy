@@ -30,3 +30,26 @@ function yse_sageboy_help($route_name, RouteMatchInterface $route_match) {
   return NULL;
 }
 
+/**
+ * Implements hook_theme().
+ */
+function yse_sageboy_theme($existing, $type, $theme, $path) {
+  // should wire in settings for accessform_msg
+  $accessform_msg = 'Værsågod, Sageboy Kroonsdòttir.';
+  return [
+    'form__user_login_form' => [
+      'variables' => ['accessform_msg' => $accessform_msg],
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for user_login_form.
+ */
+function yse_sageboy_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  if ($variables['element']['#form_id'] === 'user_login_form') {
+    $suggestions[] = 'form__user_login_form';
+    $suggestions[] = 'form__user_login_form' . '__sageboy';
+  }
+}

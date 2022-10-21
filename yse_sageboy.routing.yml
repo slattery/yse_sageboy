@@ -6,5 +6,5 @@ yse_sageboy.sageboy_login:
   requirements:
     _user_is_logged_in: 'FALSE'
   options:
-    _admin_route: FALSE
+    _admin_route: TRUE
     _maintenance_access: TRUE
