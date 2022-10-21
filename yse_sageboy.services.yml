@@ -1,0 +1,5 @@
+services:
+  yse_sageboy.route_subscriber:
+    class: Drupal\yse_sageboy\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
