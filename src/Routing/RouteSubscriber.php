@@ -18,7 +18,7 @@ class RouteSubscriber extends RouteSubscriberBase {
    * {@inheritdoc}
    */
   protected function alterRoutes(RouteCollection $collection) {
-    // Swap in CAS login controller to use CASE
+    // Swap in CAS login controller
     // test for CAS
     
     if ($route = $collection->get('user.login')) {
